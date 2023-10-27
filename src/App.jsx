@@ -1,33 +1,33 @@
-import Grid from "@mui/material/Grid"
-import Stack from "@mui/material/Stack"
-import Paper from "@mui/material/Paper"
-import { styled } from "@mui/material/styles"
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import { CardActionArea } from '@mui/material';
+import CardMedia from '@mui/material/CardMedia';
+import Card from '@mui/material/Card';
+import Producto1 from "./Producto1";
+import Producto2 from "./Producto2";
 
 function App() {
 
   return (
+
     <Stack>
+
       <Grid container>
-        <Grid item lg={3} md={4} sm={6} xs={6} xl={3}>
-          <Item>Producto 1</Item>
+
+        <Grid item lg={3} md={4} sm={6} xs={6} xl={3} sx={{border:"none"}}>
+          <Card sx={{ maxWidth: 500, border: "none", textAlign : "left" }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="300"
+                  image="src/Image/Producto4/Tenis_de_Senderismo_Eastrail_2.0_Negro_GZ3019_01_standard/Tenis_de_Senderismo_Eastrail_2.0_Negro_GZ3019_01_standard.avif"
+                  alt="Tenis de Senderismo Eastrail 2.0"
+                  />
+                </CardActionArea>
+                <Producto1/>
+            </Card>
         </Grid>
-        <Grid item lg={3} md={4} sm={6} xs={6} xl={3}>
-          <Item>Producto 2</Item>
-        </Grid>
-        <Grid item lg={3} md={4} sm={6} xs={6} xl={3}>
-          <Item>Producto 3</Item>
-        </Grid>
-        <Grid item lg={3} md={4} sm={6} xs={6} xl={3}>
-          <Item>Producto 4</Item>
-        </Grid>
+      
       </Grid>
     </Stack>
   )
