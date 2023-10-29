@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from './FavoriteIcon';
+import HeartFavorite from "./HeartFavorite";
 
 
 function Producto4(){
@@ -19,7 +19,7 @@ function Producto4(){
                   alt="Tenis de Trail Running Tracefinder"
                   sx={{ position: 'relative' }}
                   />
-                  <FavoriteIcon/>
+                  <HeartFavorite/>
                   <Typography variant="h8" component="div" sx={{ position: 'absolute', bottom: 0, left: 0, backgroundColor: 'white', color: 'gray', padding: 1 }}>
                     <del style={{ color: 'gray' }}>$479.950</del> <span style={{ color: 'red' }}>$355.163</span>
                   </Typography>

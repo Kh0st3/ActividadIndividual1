@@ -2,9 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
-function SimpleBottomNavigation() {
+function HeartFavorite() {
 
   const [value, setValue] = React.useState(0);
 
@@ -14,14 +14,14 @@ function SimpleBottomNavigation() {
         showLabels
         value={value}
         onChange={(event, newValue) => {
-          setValue(newValue);
+            setValue(newValue);
         }}
-        sx={{ backgroundColor: 'transparent' }}
+        sx={{ backgroundColor: 'transparent'}}
       >
-        <BottomNavigationAction icon={<FavoriteIcon />} />
+        <BottomNavigationAction icon={<FavoriteBorderIcon/>} />
       </BottomNavigation>
     </Box>
   );
 }
 
-export default SimpleBottomNavigation;
+export default HeartFavorite;

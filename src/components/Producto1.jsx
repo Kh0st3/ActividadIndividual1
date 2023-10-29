@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from './FavoriteIcon';
+import HeartFavorite from "./HeartFavorite";
 
 
 function Producto1(){
@@ -20,7 +20,7 @@ function Producto1(){
                   alt="Tenis de Senderismo Eastrail 2.0"
                   sx={{ position: 'relative' }}
                   />
-                  <FavoriteIcon/>
+                  <HeartFavorite/>                
                   <Typography variant="h8" component="div" sx={{ position: 'absolute', bottom: 0, left: 0, backgroundColor: 'white', color: 'gray', padding: 1 }}>
                     <del style={{ color: 'gray' }}>$449.950</del> <span style={{ color: 'red' }}>$332.963</span>
                   </Typography>
